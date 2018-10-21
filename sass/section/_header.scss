@@ -1,0 +1,74 @@
+.lc-header{
+  padding-top: 33px;
+  padding-bottom: 33px;
+  background-color: $primary-white-color;
+
+  &__wrapper{
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid $primary-link-color;
+  }
+  &----form-lang{
+    background-color: inherit;
+    border: none;
+  }
+  &--contact{
+    display: flex;
+  }
+  &--tel{
+    color: $primary-dark-color;
+    font-size: 25px;
+    font-family: $ff-bold;
+    font-weight: 400;
+    &:hover{
+      color: $primary-link-color;
+      text-decoration: none;
+    }
+  }
+  &__btn-color{
+    background-color: $primary-btn-color;
+    color: $primary-white-color;
+    font-family: $ff-regular;
+    font-size: 15px;
+  }
+  &__nav ul {
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    li {
+      position: relative;
+      & a {
+        color: $primary-dark-color;
+        text-decoration: none;
+        padding: 5px 5px;
+        font-size: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $ff-regular;
+        font-weight: 400;
+        &:hover{
+          color: $primary-link-color;
+        }
+        &:before {
+          content: "";
+          width: 0;
+          color: transparent;
+          height: 2px;
+        }
+        &:hover:before {
+          animation-name: underline;
+          animation-duration: 0.5s;
+          animation-fill-mode: forwards;
+          background-color: $primary-link-color;
+          position: absolute;
+          top: 1.5em;
+          z-index: 1000;
+        }
+      }
+
+    }
+  }
+}

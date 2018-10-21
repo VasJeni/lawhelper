@@ -1,0 +1,62 @@
+.lc__services {
+  &--wrapper {
+    background-color: $primary-bg-color-light;
+  }
+  /* margin-top: 90px;*/
+  padding: 90px 0;
+
+  &--header {
+    align-items: center;
+    padding: 0 15px;
+  }
+  &--title {
+    color: $primary-dark-color;
+    font-family: $ff-bold;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  &--all-btn {
+    text-transform: uppercase;
+    font-family: $ff-bold;
+    font-size: 15px;
+    color: $primary-link-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &--list {
+    margin-top: 50px;
+    flex-direction: row;
+    & > div{
+      position: relative;
+    }
+  }
+  &--item {
+    &-title {
+      margin: 30px 0;
+      display: block;
+      font-size: 20px;
+      font-family: $ff-bold;
+      color: $primary-dark-color;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &-describe{
+      font-family: $ff-regular;
+      font-size: 16px;
+      font-weight: 400;
+      height: 7em;
+      overflow: hidden; /* Обрезаем все, что не помещается в область */
+    }
+    &-link{
+      background-color: $primary-btn-color;
+      color: $primary-white-color;
+      font-family: $ff-regular;
+      font-weight: 400;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+  }
+}
