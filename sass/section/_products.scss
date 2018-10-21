@@ -1,6 +1,7 @@
 .lc-product{
   &-wrapper{
     padding: 100px 0 50px 0;
+    background-color: $primary-bg-color-light;
   }
   &__header{
     width: 100%;
@@ -19,5 +20,28 @@
     flex-direction: row;
     margin: 20px 0;
     box-sizing: border-box;
+    padding: 20px;
+    & > img{
+      box-sizing: content-box;
+      padding: 40px 40px;
+      background-color: $primary-white-color;
+      border-bottom: 3px solid $primary-link-color;
+
+    }
+    &-text{
+      width: 80%;
+      margin-left: 20px;
+    }
+    &-describe{
+      & > h4 {
+        font-family: $ff-bold;
+        font-weight: 800;
+        font-size: 20px;
+      }
+    }
+    &:hover{
+      background-color: $primary-white-color;
+    }
+
   }
 }
