@@ -15,33 +15,46 @@
     justify-content: space-around;
   }
   &--item{
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: row;
     margin: 20px 0;
     box-sizing: border-box;
     padding: 20px;
-    & > img{
+    flex-wrap: wrap;
+    &-price{
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    & img{
       box-sizing: content-box;
-      padding: 40px 40px;
+      padding: 5px 5px;
       background-color: $primary-white-color;
       border-bottom: 3px solid $primary-link-color;
-
     }
     &-text{
-      width: 80%;
-      margin-left: 20px;
+      margin-left: 5px;
     }
     &-describe{
       & > h4 {
         font-family: $ff-bold;
         font-weight: 800;
         font-size: 20px;
+        text-transform: uppercase;
       }
     }
-    &:hover{
+
+    &:hover  {
       background-color: $primary-white-color;
+      & .lc-product--item-describe > h4 {
+        color: $primary-btn-color;
+      }
     }
 
+  }
+  &--btn-price{
+    background-color: $primary-btn-color;
+    color: $primary-bg-color-light;
   }
 }
