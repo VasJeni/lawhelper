@@ -1,8 +1,11 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "core/_variables.scss";
 @import "core/_fonts.scss";
+@import "core/_base.scss";
 @import "section/_header.scss";
 @import "section/_services.scss";
+@import "section/_describe.scss";
+@import "section/_products.scss";
 
 @import "animation/_animations.scss";
 

@@ -1,0 +1,16 @@
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $primary-white-color !important;
+  text-transform: uppercase;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $primary-white-color !important;
+  text-transform: uppercase;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $primary-white-color !important;
+  text-transform: uppercase;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $primary-white-color !important;
+  text-transform: uppercase;
+}

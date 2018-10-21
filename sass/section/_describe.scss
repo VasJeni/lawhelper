@@ -1,0 +1,69 @@
+.lc__describe{
+  padding: 45px 0 35px 0;
+
+  &__text-wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-wrapper{
+    background:url("../images/bg-describe.png") #005e60;
+  }
+  &--title {
+    width: 45%;
+    text-align: end;
+    position: relative;
+    & > h3 {
+      font-size: 40px;
+      font-family: $ff-bold;
+      color: $primary-white-color;
+      text-transform: uppercase;
+    }
+    & > h4 {
+      font-size: 20px;
+      color: $primary-white-color;
+      text-transform: uppercase;
+    }
+    &-text{
+      & p {
+        font-family: $ff-regular;
+        font-size: 16px;
+        color: $primary-link-color;
+        padding: 0;
+        margin: 0;
+      }
+
+    }
+  }
+  &--separator {
+    width: 1px;
+    height: 80px;
+    background-color: $primary-link-color;
+    content: "";
+    top: 0;
+    margin: 0 10px;
+  }
+  & form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    & div{
+      width: 100%;
+    }
+      & input {
+        background-color: $primary-link-color;
+        margin: 0 5px;
+        border: 1px solid $primary-link-color;
+        color: $primary-bg-color-light;
+        font-family: $ff-regular;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    & button {
+      background-color: $primary-btn-color;
+      border: none;
+    }
+  }
+  &--form{
+    margin-top: 35px;
+  }
+}
